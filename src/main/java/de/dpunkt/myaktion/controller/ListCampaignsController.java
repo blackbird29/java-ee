@@ -1,8 +1,10 @@
 package de.dpunkt.myaktion.controller;
 
+import de.dpunkt.myaktion.data.CampaignProducer;
 import de.dpunkt.myaktion.model.Campaign;
 
 import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 
@@ -14,14 +16,17 @@ import java.io.Serializable;
 public class ListCampaignsController implements Serializable {
 
     private static final long serialVersionUID = 8693277383648025822L;
+    @Inject
+    private CampaignProducer campaignProducer;
+
 
     public String doAddCampaign(){
-        System.out.println("Add Campaign");
+        campaignProducer.prepareAddCampaign();
         return Pages.EDIT_CAMPAIGN;
     }
 
     public String doEditCampaign(Campaign campaign){
-        System.out.println("Edit Campaign " + campaign);
+        campaignProducer.prepareEditCampaign(campaign);
         return Pages.EDIT_CAMPAIGN;
     }
 
