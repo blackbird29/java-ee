@@ -1,5 +1,6 @@
 package de.dpunkt.myaktion.model;
 
+import java.util.Currency;
 import java.util.List;
 
 /**
@@ -14,6 +15,7 @@ public class Campaign {
     private Account account;
     private Long id;
     private List<Donation> donations;
+    private String currency = "EUR";
 
     public Campaign() {
         this.account = new Account();
@@ -73,5 +75,9 @@ public class Campaign {
 
     public void setDonations(List<Donation> donations) {
         this.donations = donations;
+    }
+
+    public String getCurrency(){
+        return currency;
     }
 }
