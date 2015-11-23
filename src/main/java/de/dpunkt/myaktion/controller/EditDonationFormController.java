@@ -3,8 +3,10 @@ package de.dpunkt.myaktion.controller;
 import de.dpunkt.myaktion.data.CampaignProducer;
 
 import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
 import java.io.StreamCorruptedException;
 import java.io.StringReader;
@@ -27,9 +29,9 @@ public class EditDonationFormController implements Serializable {
     }
 
     public String getUrl(){
-        return "http://localhost:8080/my-aktion/donateMoney.jsf?bgColor="
-                +bgColor + "&textColor=" + textColor + "&campaignId"
-                +campaignProducer.getSelectedCampaign().getId();
+        return getAppUrl() + "/" + Pages.DONATE_MONEY + ".jsf"
+                + "?bgColor=" + bgColor + "&textColor=" + textColor
+                + "&campaignId=" + campaignProducer.getSelectedCampaign().getId();
     }
 
     public String getTextColor(){
@@ -46,6 +48,13 @@ public class EditDonationFormController implements Serializable {
 
     public void setBgColor(String bgColor){
         this.bgColor = bgColor;
+    }
+
+    private String getAppUrl(){
+        HttpServletRequest servletRequest =
+                (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        return servletRequest.getScheme() + "://" + servletRequest.getServerName() + ":"
+                + servletRequest.getServerPort() + servletRequest.getContextPath();
     }
 
 }
