@@ -31,12 +31,12 @@ public class ListCampaignsController implements Serializable {
     }
 
     public String doEditDonationForm(Campaign campaign){
-        System.out.println("Edit Donation Form of Campaign " + campaign);
+        campaignProducer.setSelectedCampaign(campaign);
         return Pages.EDIT_DONATION_FORM;
     }
 
     public String doListDonations(Campaign campaign){
-        System.out.println("List Donations of Campaign " + campaign);
+        campaignProducer.setSelectedCampaign(campaign);
         return Pages.LIST_DONATIONS;
     }
 

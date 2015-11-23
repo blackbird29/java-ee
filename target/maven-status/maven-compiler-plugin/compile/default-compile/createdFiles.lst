@@ -1,0 +1,12 @@
+de/dpunkt/myaktion/model/Account.class
+de/dpunkt/myaktion/controller/ListDonationsController.class
+de/dpunkt/myaktion/data/CampaignProducer$Mode.class
+de/dpunkt/myaktion/controller/EditDonationFormController.class
+de/dpunkt/myaktion/controller/EditCampaignController.class
+de/dpunkt/myaktion/model/Campaign.class
+de/dpunkt/myaktion/controller/ListCampaignsController.class
+de/dpunkt/myaktion/data/CampaignProducer.class
+de/dpunkt/myaktion/model/Donation.class
+de/dpunkt/myaktion/data/CampaignListProducer.class
+de/dpunkt/myaktion/model/Status.class
+de/dpunkt/myaktion/controller/Pages.class
