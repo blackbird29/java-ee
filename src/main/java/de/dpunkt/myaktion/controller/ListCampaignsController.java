@@ -18,6 +18,7 @@ public class ListCampaignsController implements Serializable {
     private static final long serialVersionUID = 8693277383648025822L;
     @Inject
     private CampaignProducer campaignProducer;
+    private Campaign campaignToDelete;
 
 
     public String doAddCampaign(){
@@ -41,7 +42,12 @@ public class ListCampaignsController implements Serializable {
     }
 
     public void doDeleteCampaign(Campaign campaign){
-        System.out.println("Deletion not implemented, yet!");
+        this.campaignToDelete = campaign;
+        System.out.println("Campaign prepared to delete");
+    }
+
+    public void commitDeleteCampaign(){
+        System.out.println("Campaign deletion not yet implemented");
     }
 
 }

@@ -1,7 +1,5 @@
 package de.dpunkt.myaktion.controller;
 
-import com.sun.org.apache.bcel.internal.generic.FADD;
-import com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
 import de.dpunkt.myaktion.model.Donation;
 
 import javax.enterprise.context.SessionScoped;
