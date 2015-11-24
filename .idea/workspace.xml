@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d4cc6ef-6616-4e7d-9d59-82f7ac9fafdd" name="Default" comment="125 - 142&#10;&#10;- implemented PrimeFaces&#10; - colorPicker implemented&#10; - tables are now in style of PrimeFaces&#10;- deleting a campaign now first asks the user if he is sure">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_4_0.xml" />
+    <list default="true" id="9d4cc6ef-6616-4e7d-9d59-82f7ac9fafdd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/ListCampaignsController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/ListCampaignsController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion.war" afterPath="$PROJECT_DIR$/target/my-aktion.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/ListCampaignsController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/ListCampaignsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/my_aktion_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/my_aktion_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-aktion.iml" afterPath="$PROJECT_DIR$/my-aktion.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/ListCampaignsController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/ListCampaignsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages_de.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages_de.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/editCampaign.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/editCampaign.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/editDonationForm.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/editDonationForm.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages_de.properties" afterPath="$PROJECT_DIR$/target/classes/messages_de.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages_en.properties" afterPath="$PROJECT_DIR$/target/classes/messages_en.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
@@ -893,7 +882,7 @@
       <workItem from="1447235834657" duration="3479000" />
       <workItem from="1448111499850" duration="8205000" />
       <workItem from="1448300184073" duration="6163000" />
-      <workItem from="1448360258737" duration="2610000" />
+      <workItem from="1448360258737" duration="2629000" />
     </task>
     <task id="LOCAL-00001" summary="pages 75 - 87&#10;&#10;created main page listCampaigns.xhtml,&#10;localized it,&#10;added URL relocation when calling .../my-aktion">
       <created>1447240906751</created>
@@ -925,11 +914,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448320130014</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="125 - 142&#10;&#10;- implemented PrimeFaces&#10; - colorPicker implemented&#10; - tables are now in style of PrimeFaces&#10;- deleting a campaign now first asks the user if he is sure">
+      <created>1448362882787</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1448362882787</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20705000" />
+    <option name="totallyTimeSpent" value="20724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="0" />
