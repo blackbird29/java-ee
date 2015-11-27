@@ -28,7 +28,7 @@
                                      value="#{editDonationFormController.url}"/>
                 </h:panelGrid>
 
-                <p:commandButton value="Update URL" update="url"></p:commandButton>
+                <p:commandButton value="#{msg['editDonationForm.update_url']}" update="url"></p:commandButton>
                 <p:commandButton value="OK"
                                  action="#{editDonationFormController.doOk}" ajax="false"></p:commandButton>
             </h:form>

@@ -33,7 +33,7 @@ public class CampaignListProducer implements Serializable {
         Donation donation1 = new Donation();
         donation1.setDonorName("Heinz Schmidt");
         donation1.setAmount(20d);
-        donation1.setReceiptsRequested(true);
+        donation1.setReceiptRequested(true);
         donation1.setStatus(Status.TRANSFERRED);
         donation1.setAccount(new Account(donation1.getDonorName(),
                 "XXX Bank", "DE44876543210000123456"));
@@ -41,7 +41,7 @@ public class CampaignListProducer implements Serializable {
         Donation donation2 = new Donation();
         donation2.setDonorName("Karl Meier");
         donation2.setAmount(30d);
-        donation2.setReceiptsRequested(false);
+        donation2.setReceiptRequested(false);
         donation2.setStatus(Status.IN_PROCESS);
         donation2.setAccount(new Account(donation2.getDonorName(),
                 "YYY Bank", "DE44864275310000654321"));

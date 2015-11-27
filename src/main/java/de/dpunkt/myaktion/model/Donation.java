@@ -31,11 +31,11 @@ public class Donation {
         this.donorName = donorName;
     }
 
-    public Boolean getReceiptsRequested() {
+    public Boolean getReceiptRequested() {
         return receiptsRequested;
     }
 
-    public void setReceiptsRequested(Boolean receiptsRequested) {
+    public void setReceiptRequested(Boolean receiptsRequested) {
         this.receiptsRequested = receiptsRequested;
     }
 
