@@ -12,14 +12,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/data/CampaignListProducer.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/data/CampaignListProducer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/model/Donation.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/model/Donation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Donation.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Donation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages_de.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages_de.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/donateMoney.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/donateMoney.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/editCampaign.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/editCampaign.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/editDonationForm.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/editDonationForm.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/listDonations.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/listDonations.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages_de.properties" afterPath="$PROJECT_DIR$/target/classes/messages_de.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages_en.properties" afterPath="$PROJECT_DIR$/target/classes/messages_en.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
@@ -747,7 +739,7 @@
       <workItem from="1448111499850" duration="8205000" />
       <workItem from="1448300184073" duration="6163000" />
       <workItem from="1448360258737" duration="3712000" />
-      <workItem from="1448609795764" duration="7318000" />
+      <workItem from="1448609795764" duration="7376000" />
     </task>
     <task id="LOCAL-00001" summary="pages 75 - 87&#10;&#10;created main page listCampaigns.xhtml,&#10;localized it,&#10;added URL relocation when calling .../my-aktion">
       <created>1447240906751</created>
@@ -791,11 +783,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448362898085</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="142 - 144&#10;&#10;- implemented PrimeFaces on all JSF views&#10;- added inline placeholders to all input fields">
+      <created>1448620701647</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1448620701647</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29125000" />
+    <option name="totallyTimeSpent" value="29183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="0" />
@@ -803,6 +801,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -812,7 +811,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -827,7 +826,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -850,7 +848,8 @@
     <MESSAGE value="110 - 118&#10;&#10;- donationList can now be viewed" />
     <MESSAGE value="118 - 125&#10;&#10;- view and class to make donations are now implemented" />
     <MESSAGE value="125 - 142&#10;&#10;- implemented PrimeFaces&#10; - colorPicker implemented&#10; - tables are now in style of PrimeFaces&#10;- deleting a campaign now first asks the user if he is sure" />
-    <option name="LAST_COMMIT_MESSAGE" value="125 - 142&#10;&#10;- implemented PrimeFaces&#10; - colorPicker implemented&#10; - tables are now in style of PrimeFaces&#10;- deleting a campaign now first asks the user if he is sure" />
+    <MESSAGE value="142 - 144&#10;&#10;- implemented PrimeFaces on all JSF views&#10;- added inline placeholders to all input fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="142 - 144&#10;&#10;- implemented PrimeFaces on all JSF views&#10;- added inline placeholders to all input fields" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
