@@ -3,10 +3,11 @@
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/ListDonationsController.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/Pages.java
-/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/EditDonationFormController.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/model/FormConfig.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/model/Status.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/model/Donation.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/data/CampaignProducer.java
-/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/model/Status.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/ListCampaignsController.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/EditCampaignController.java

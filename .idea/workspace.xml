@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d4cc6ef-6616-4e7d-9d59-82f7ac9fafdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/FormConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion.war" afterPath="$PROJECT_DIR$/target/my-aktion.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditDonationFormController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditDonationFormController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/donateMoney.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/donateMoney.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/editDonationForm.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/editDonationForm.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/donateMoney.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/donateMoney.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/editDonationForm.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/editDonationForm.xhtml" />
     </list>
     <ignored path="my-aktion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +51,8 @@
       <file leaf-file-name="donateMoney.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/donateMoney.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36683416">
-              <caret line="54" column="79" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.6080402">
+              <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -886,7 +891,7 @@
       <workItem from="1448111499850" duration="8205000" />
       <workItem from="1448300184073" duration="6163000" />
       <workItem from="1448360258737" duration="3712000" />
-      <workItem from="1448609795764" duration="8591000" />
+      <workItem from="1448609795764" duration="8689000" />
     </task>
     <task id="LOCAL-00001" summary="pages 75 - 87&#10;&#10;created main page listCampaigns.xhtml,&#10;localized it,&#10;added URL relocation when calling .../my-aktion">
       <created>1447240906751</created>
@@ -942,11 +947,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448620711286</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- added FormConfig class">
+      <created>1448621959173</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1448621959173</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30398000" />
+    <option name="totallyTimeSpent" value="30496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="0" />
@@ -1002,7 +1013,8 @@
     <MESSAGE value="118 - 125&#10;&#10;- view and class to make donations are now implemented" />
     <MESSAGE value="125 - 142&#10;&#10;- implemented PrimeFaces&#10; - colorPicker implemented&#10; - tables are now in style of PrimeFaces&#10;- deleting a campaign now first asks the user if he is sure" />
     <MESSAGE value="142 - 144&#10;&#10;- implemented PrimeFaces on all JSF views&#10;- added inline placeholders to all input fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="142 - 144&#10;&#10;- implemented PrimeFaces on all JSF views&#10;- added inline placeholders to all input fields" />
+    <MESSAGE value="- added FormConfig class" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added FormConfig class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1468,8 +1480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/donateMoney.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36683416">
-          <caret line="54" column="79" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
+        <state vertical-scroll-proportion="0.6080402">
+          <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
           <folding />
         </state>
       </provider>

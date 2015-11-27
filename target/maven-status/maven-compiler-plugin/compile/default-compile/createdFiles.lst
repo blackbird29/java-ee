@@ -6,6 +6,7 @@ de/dpunkt/myaktion/controller/EditCampaignController.class
 de/dpunkt/myaktion/model/Campaign.class
 de/dpunkt/myaktion/controller/DonateMoneyController.class
 de/dpunkt/myaktion/controller/ListCampaignsController.class
+de/dpunkt/myaktion/model/FormConfig.class
 de/dpunkt/myaktion/data/CampaignProducer.class
 de/dpunkt/myaktion/model/Donation.class
 de/dpunkt/myaktion/data/CampaignListProducer.class
