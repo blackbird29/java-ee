@@ -8,19 +8,19 @@
     <ui:composition template="/template.xhtml">
         <ui:define name="content">
             <h1>#{msg['editDonationForm.edit_donation_form']}</h1>
-
             <h:form>
 
                 <h:panelGrid columns="2">
 
+                    <h:inputText value="#{editDonationFormController.formConfig.title}"></h:inputText>
                     <h:outputLabel value="#{msg['editDonationForm.background_color']}:"></h:outputLabel>
                     <p:colorPicker id="bgColor"
-                                   value="#{editDonationFormController.bgColor}"
+                                   value="#{editDonationFormController.formConfig.bgColor}"
                                    widgetVar="bgPicker">
                     </p:colorPicker>
                     <h:outputLabel value="#{msg['editDonationForm.text_color']}:"></h:outputLabel>
                     <p:colorPicker id="textColor"
-                                   value="#{editDonationFormController.textColor}"
+                                   value="#{editDonationFormController.formConfig.textColor}"
                                    widgetVar="textPicker">
                     </p:colorPicker>
                     <h:outputLabel value="#{msg['editDonationForm.form_url']}:"></h:outputLabel>

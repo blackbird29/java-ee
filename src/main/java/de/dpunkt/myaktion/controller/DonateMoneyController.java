@@ -19,6 +19,7 @@ public class DonateMoneyController implements Serializable {
     private static final long serialVersionUID = 5493038842003809106L;
     private String textColor = "000000";
     private String bgColor = "ffffff";
+    private String title;
     private Long campaignId;
     private Donation donation;
 
@@ -48,6 +49,14 @@ public class DonateMoneyController implements Serializable {
 
     public void setBgColor(String bgColor) {
         this.bgColor = bgColor;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public Donation getDonation() {
