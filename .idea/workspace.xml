@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d4cc6ef-6616-4e7d-9d59-82f7ac9fafdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/util/Events.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/util/Resources.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditCampaignController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditCampaignController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditDonationFormController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditDonationFormController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/ListCampaignsController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/ListCampaignsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/ListDonationsController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/ListDonationsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignProducer.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages_de.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages_de.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/editCampaign.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/editCampaign.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/listDonations.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/listDonations.xhtml" />
     </list>
     <ignored path="my-aktion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -928,7 +914,7 @@
       <workItem from="1448360258737" duration="3712000" />
       <workItem from="1448609795764" duration="7376000" />
       <workItem from="1448622255274" duration="736000" />
-      <workItem from="1448965811453" duration="3118000" />
+      <workItem from="1448965811453" duration="3264000" />
     </task>
     <task id="LOCAL-00001" summary="pages 75 - 87&#10;&#10;created main page listCampaigns.xhtml,&#10;localized it,&#10;added URL relocation when calling .../my-aktion">
       <created>1447240906751</created>
@@ -978,11 +964,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448620701647</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="167 - 184&#10;&#10;- changed all controller scopes to @ViewScoped&#10;- implemented events for addCampaign and deleteCampaign&#10;- changed bean access in facelets">
+      <created>1448969076998</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1448969076998</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33037000" />
+    <option name="totallyTimeSpent" value="33183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="0" />
@@ -990,6 +982,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1014,7 +1007,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1038,7 +1030,8 @@
     <MESSAGE value="118 - 125&#10;&#10;- view and class to make donations are now implemented" />
     <MESSAGE value="125 - 142&#10;&#10;- implemented PrimeFaces&#10; - colorPicker implemented&#10; - tables are now in style of PrimeFaces&#10;- deleting a campaign now first asks the user if he is sure" />
     <MESSAGE value="142 - 144&#10;&#10;- implemented PrimeFaces on all JSF views&#10;- added inline placeholders to all input fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="142 - 144&#10;&#10;- implemented PrimeFaces on all JSF views&#10;- added inline placeholders to all input fields" />
+    <MESSAGE value="167 - 184&#10;&#10;- changed all controller scopes to @ViewScoped&#10;- implemented events for addCampaign and deleteCampaign&#10;- changed bean access in facelets" />
+    <option name="LAST_COMMIT_MESSAGE" value="167 - 184&#10;&#10;- changed all controller scopes to @ViewScoped&#10;- implemented events for addCampaign and deleteCampaign&#10;- changed bean access in facelets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1112,6 +1105,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,6 +1132,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,6 +1186,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,6 +1263,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.666666">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,6 +1286,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,6 +1308,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3333335">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
