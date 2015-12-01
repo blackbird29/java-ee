@@ -3,13 +3,14 @@ package de.dpunkt.myaktion.controller;
 import com.sun.tracing.dtrace.NameAttributes;
 
 import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ViewScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 
 /**
  * Created by blackbird on 11/23/15.
  */
-@SessionScoped
+@ViewScoped
 @Named
 public class ListDonationsController implements Serializable {
 

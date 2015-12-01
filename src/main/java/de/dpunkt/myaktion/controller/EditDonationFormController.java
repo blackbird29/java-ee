@@ -3,6 +3,7 @@ package de.dpunkt.myaktion.controller;
 import de.dpunkt.myaktion.data.CampaignProducer;
 
 import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -14,7 +15,7 @@ import java.io.StringReader;
 /**
  * Created by blackbird on 11/23/15.
  */
-@SessionScoped
+@ViewScoped
 @Named
 public class EditDonationFormController implements Serializable {
 
@@ -23,6 +24,8 @@ public class EditDonationFormController implements Serializable {
     private String bgColor= "ffffff";
     @Inject
     private CampaignProducer campaignProducer;
+    @Inject
+    private HttpServletRequest request;
 
     public String doOk(){
         return Pages.LIST_CAMPAIGNS;
@@ -51,10 +54,12 @@ public class EditDonationFormController implements Serializable {
     }
 
     private String getAppUrl(){
-        HttpServletRequest servletRequest =
-                (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-        return servletRequest.getScheme() + "://" + servletRequest.getServerName() + ":"
-                + servletRequest.getServerPort() + servletRequest.getContextPath();
+        String scheme = request.getScheme();
+        String serverName = request.getServerName();
+        int serverPort = request.getServerPort();
+        String contextPath = request.getContextPath();
+
+        return scheme+"://"+serverName+":"+serverPort+contextPath;
     }
 
 }

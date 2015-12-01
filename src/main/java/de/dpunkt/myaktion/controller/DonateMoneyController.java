@@ -2,17 +2,23 @@ package de.dpunkt.myaktion.controller;
 
 import de.dpunkt.myaktion.model.Donation;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
+import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
+import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
+import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by blackbird on 11/23/15.
  */
-@SessionScoped
+@ViewScoped
 @Named
 public class DonateMoneyController implements Serializable {
 
@@ -22,7 +28,13 @@ public class DonateMoneyController implements Serializable {
     private Long campaignId;
     private Donation donation;
 
-    public DonateMoneyController(){
+    @Inject
+    private FacesContext facesContext;
+    @Inject
+    private Logger logger;
+
+    @PostConstruct
+    public void initializeDonation(){
         this.donation = new Donation();
     }
 
@@ -59,12 +71,14 @@ public class DonateMoneyController implements Serializable {
     }
 
     public String doDonation(){
-        final FacesContext facesContext = FacesContext.getCurrentInstance();
+        logger.log(Level.INFO, "log.donationMoney.thank_you",
+                new Object[]{getDonation().getDonorName(),
+                getDonation().getAccount()});
         final ResourceBundle resourceBundle = facesContext.getApplication().getResourceBundle(facesContext,"msg");
         final String msg = resourceBundle.getString("donateMoney.thank_you");
         facesContext.addMessage(null,new FacesMessage(
                 FacesMessage.SEVERITY_INFO, msg, null));
-        this.donation = new Donation();
+        initializeDonation();
         return Pages.DONATE_MONEY;
     }
 }
