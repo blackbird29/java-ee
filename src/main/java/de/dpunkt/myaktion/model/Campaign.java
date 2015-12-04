@@ -10,7 +10,7 @@ public class Campaign {
 
     private String name;
     private Double targetAmount;
-    private Double donationMinimun;
+    private Double donationMinimum;
     private Double amountDonatedSoFar;
     private Account account;
     private Long id;
@@ -38,11 +38,11 @@ public class Campaign {
     }
 
     public Double getDonationMinimum() {
-        return donationMinimun;
+        return donationMinimum;
     }
 
     public void setDonationMinimum(Double donationMinimun) {
-        this.donationMinimun = donationMinimun;
+        this.donationMinimum = donationMinimun;
     }
 
     public Double getAmountDonatedSoFar() {
