@@ -10,7 +10,7 @@
     <f:view contracts="#{view.locale.language}">
         <ui:composition template="/template.xhtml">
             <ui:define name="content">
-                <h1>#{campaignProducer.addMode ?
+                <h1>#{addMode ?
                 msg['editCampaign.add_new_campaign'] :
                 msg['editCampaign.edit_campaign']}</h1>
                 <h:form>
@@ -24,7 +24,7 @@
                         <h:outputLabel value="#{msg['editCampaign.name']}:">
                         </h:outputLabel>
                         <p:inputText id="a_name"
-                                     value="#{campaignProducer.selectedCampaign.name}"
+                                     value="#{selectedCampaign.name}"
                                      validatorMessage="#{msg['editCampaign.campaign_name_validation']}">
                             <f:passThroughAttribute name="placeholder"
                                                     value="#{msg['editCampaign.name_of_the_campaign']}">
@@ -37,7 +37,7 @@
                         </h:outputLabel>
                         <h:panelGroup>
                             <p:inputText id="a_targetAmount"
-                                         value="#{campaignProducer.selectedCampaign.targetAmount}"
+                                         value="#{selectedCampaign.targetAmount}"
                             validatorMessage="#{msg['editCampaign.target_amount_validation']}">
                                 <f:passThroughAttribute name="placeholder"
                                                         value="#{msg['editCampaign.amount_aimed_for']}">
@@ -47,14 +47,14 @@
                                 </f:convertNumber>
                                 <f:validateRequired></f:validateRequired>
                                 <f:validateDoubleRange minimum="10.0"></f:validateDoubleRange>
-                            </p:inputText> #{campaignProducer.selectedCampaign.currency}
+                            </p:inputText> #{selectedCampaign.currency}
                         </h:panelGroup>
                         <p:message for="a_targetAmount" class="validation-error"></p:message>
                         <h:outputLabel value="#{msg['editCampaign.donation_amount']}:">
                         </h:outputLabel>
                         <h:panelGroup>
                             <p:inputText id="a_donationMinimum"
-                                         value="#{campaignProducer.selectedCampaign.donationMinimum}"
+                                         value="#{selectedCampaign.donationMinimum}"
                                          validatorMessage="#{msg['editCampaign.donation_amount_validation']}">
                                 <f:passThroughAttribute name="placeholder"
                                                         value="#{msg['editCampaign.amount_to_be_donated']}">
@@ -63,7 +63,7 @@
                                                  minFractionDigits="2"></f:convertNumber>
                                 <f:validateRequired></f:validateRequired>
                                 <f:validateDoubleRange minimum="1.0"></f:validateDoubleRange>
-                            </p:inputText> #{campaignProducer.selectedCampaign.currency}
+                            </p:inputText> #{selectedCampaign.currency}
                         </h:panelGroup>
                         <p:message for="a_donationMinimum" class="validation-error"></p:message>
                     </h:panelGrid>
@@ -76,7 +76,7 @@
                         <h:outputLabel value="#{msg['editCampaign.name']}:">
                         </h:outputLabel>
                         <p:inputText id="b_name"
-                                     value="#{campaignProducer.selectedCampaign.account.name}">
+                                     value="#{selectedCampaign.account.name}">
                             <f:passThroughAttribute name="placeholder"
                                                     value="#{msg['editCampaign.name_of_the_account']}">
                             </f:passThroughAttribute>
@@ -86,7 +86,7 @@
                         <h:outputLabel value="#{msg['editCampaign.iban']}:">
                         </h:outputLabel>
                         <p:inputText id="b_iban"
-                            value="#{campaignProducer.selectedCampaign.account.iban}">
+                            value="#{selectedCampaign.account.iban}">
                             <f:passThroughAttribute name="placeholder"
                                                     value="#{msg['editCampaign.iban_of_the_account']}">
                             </f:passThroughAttribute>
@@ -96,7 +96,7 @@
                         <h:outputLabel value="#{msg['editCampaign.name_of_bank']}:">
                         </h:outputLabel>
                         <p:inputText id="b_name_of_bank"
-                                     value="#{campaignProducer.selectedCampaign.account.nameOfBank}">
+                                     value="#{selectedCampaign.account.nameOfBank}">
                             <f:passThroughAttribute name="placeholder"
                                                     value="#{msg['editCampaign.name_of_bank']}">
                             </f:passThroughAttribute>
