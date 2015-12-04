@@ -1,21 +1,16 @@
 package de.dpunkt.myaktion.data;
 
-import de.dpunkt.myaktion.model.Account;
 import de.dpunkt.myaktion.model.Campaign;
-import de.dpunkt.myaktion.model.Donation;
-import de.dpunkt.myaktion.model.Status;
 import de.dpunkt.myaktion.services.CampaignService;
 import de.dpunkt.myaktion.util.Events;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
 import javax.enterprise.event.Observes;
-import javax.enterprise.inject.Decorated;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
-import java.util.LinkedList;
 import java.util.List;
 
 /**

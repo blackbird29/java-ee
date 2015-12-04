@@ -1,9 +1,6 @@
 package de.dpunkt.myaktion.controller;
 
-import com.sun.tracing.dtrace.NameAttributes;
-
-import javax.enterprise.context.SessionScoped;
-import javax.faces.bean.ViewScoped;
+import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 

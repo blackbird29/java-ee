@@ -1,16 +1,15 @@
 package de.dpunkt.myaktion.controller;
 
 import de.dpunkt.myaktion.model.Donation;
+import de.dpunkt.myaktion.util.Log;
 
 import javax.annotation.PostConstruct;
-import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ViewScoped;
+import javax.faces.view.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
-import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -31,6 +30,7 @@ public class DonateMoneyController implements Serializable {
     @Inject
     private FacesContext facesContext;
     @Inject
+    @Log.FachLog
     private Logger logger;
 
     @PostConstruct

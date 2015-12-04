@@ -1,7 +1,6 @@
 package de.dpunkt.myaktion.data;
 
 import de.dpunkt.myaktion.model.Campaign;
-import sun.util.resources.cldr.hy.CalendarData_hy_AM;
 
 import javax.enterprise.context.SessionScoped;
 import javax.enterprise.inject.Produces;

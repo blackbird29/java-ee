@@ -4,9 +4,8 @@ import de.dpunkt.myaktion.data.CampaignProducer;
 import de.dpunkt.myaktion.model.Campaign;
 import de.dpunkt.myaktion.util.Events;
 
-import javax.enterprise.context.SessionScoped;
 import javax.enterprise.event.Event;
-import javax.faces.bean.ViewScoped;
+import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;

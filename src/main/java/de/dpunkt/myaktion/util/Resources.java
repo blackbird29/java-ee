@@ -13,8 +13,15 @@ import java.util.logging.Logger;
 @Dependent
 public class Resources {
     @Produces
-    public Logger produceLog(InjectionPoint injectionPoint){
-        return Logger.getLogger(injectionPoint.getMember().getDeclaringClass().getName(),"messages");
+    @Log.FachLog
+    public Logger produceFachLog(InjectionPoint injectionPoint){
+        return Logger.getLogger("Fachlog:" + injectionPoint.getMember().getDeclaringClass().getName(),"messages");
+    }
+
+    @Produces
+    @Log.TecLog
+    public Logger produceTecLog(InjectionPoint injectionPoint){
+        return Logger.getLogger("Teclog:" +injectionPoint.getMember().getDeclaringClass().getName(),"messages");
     }
 
     @Produces
