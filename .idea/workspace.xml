@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d4cc6ef-6616-4e7d-9d59-82f7ac9fafdd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditCampaignController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditCampaignController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/ListCampaignsController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/ListCampaignsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/ListDonationsController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/ListDonationsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/data/CampaignListProducer.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/data/CampaignListProducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/data/CampaignProducer.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/data/CampaignProducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion.war" afterPath="$PROJECT_DIR$/target/my-aktion.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/EditCampaignController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/EditCampaignController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/ListCampaignsController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/ListCampaignsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/ListDonationsController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/ListDonationsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/data/CampaignListProducer.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/data/CampaignListProducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/data/CampaignProducer.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/data/CampaignProducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages_de.properties" afterPath="$PROJECT_DIR$/target/classes/messages_de.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/messages_en.properties" afterPath="$PROJECT_DIR$/target/classes/messages_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/messages_de.properties" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/messages_de.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/messages_en.properties" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/messages_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/donateMoney.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/donateMoney.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/editCampaign.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/editCampaign.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/listCampaigns.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/listCampaigns.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/listDonations.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/listDonations.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Campaign.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Campaign.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml" />
     </list>
     <ignored path="my-aktion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,12 +26,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53277314">
+            <state vertical-scroll-proportion="-11.777778">
               <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listCampaigns.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.333333">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Donation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Donation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <folding>
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Campaign.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Campaign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18971062">
+              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+              <folding>
+                <element signature="e#1673#1674#0" expanded="true" />
+                <element signature="e#1704#1705#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/CSS/validationMessages.css" />
-        <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Campaign.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/contracts/de/template.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/contracts/en/template.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Donation.java" />
@@ -157,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditDonationFormController.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/ListDonationsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignProducer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/editCampaign.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/listDonations.xhtml" />
@@ -170,6 +180,8 @@
         <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/services/CampaignServiceBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/services/MockCampaignServiceBean.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Campaign.java" />
       </list>
     </option>
   </component>
@@ -230,8 +242,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,9 +260,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-aktion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-aktion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -713,6 +739,7 @@
       <workItem from="1449088168193" duration="1062000" />
       <workItem from="1449216195154" duration="1012000" />
       <workItem from="1449218176564" duration="3000" />
+      <workItem from="1449221217656" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="pages 75 - 87&#10;&#10;created main page listCampaigns.xhtml,&#10;localized it,&#10;added URL relocation when calling .../my-aktion">
       <created>1447240906751</created>
@@ -784,7 +811,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35343000" />
+    <option name="totallyTimeSpent" value="35546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="0" />
@@ -1081,13 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Campaign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
@@ -1099,13 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Donation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1178,21 +1191,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignProducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1250,9 +1252,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53277314">
+        <state vertical-scroll-proportion="-11.777778">
           <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/listCampaigns.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Donation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/model/Campaign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18971062">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+          <folding>
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
