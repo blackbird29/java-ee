@@ -12,6 +12,8 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by blackbird on 10/28/15.
@@ -23,6 +25,8 @@ public class CampaignListProducer implements Serializable {
     private List<Campaign> campaigns;
     @Inject
     private CampaignService campaignService;
+    @Inject
+    private Logger logger;
 
     @PostConstruct
     public void initializeCampaigns(){
@@ -41,6 +45,10 @@ public class CampaignListProducer implements Serializable {
 
     public void onCampaignDeleted(@Observes @Events.Deleted Campaign campaign){
         getCampaigns().remove(campaign);
+    }
+
+    public void onCampaignUpdated(@Observes @Events.Updated Campaign campaign) {
+        logger.log(Level.INFO, "Not implemented yet - Campaign update");
     }
 
 }

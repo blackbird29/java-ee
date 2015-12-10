@@ -23,10 +23,16 @@ public class EditCampaignController implements Serializable {
     private CampaignProducer campaignProducer;
     @Inject @Events.Added
     private Event<Campaign> campaignAddEvent;
+    @Inject @Events.Updated
+    private Event<Campaign> campaignUpdateEvent;
 
     public String doSave(){
         if( campaignProducer.isAddMode() ){
             campaignAddEvent.fire(campaignProducer.getSelectedCampaign());
+        }
+        else {
+            campaignUpdateEvent.fire(
+                    campaignProducer.getSelectedCampaign());
         }
         return Pages.LIST_CAMPAIGNS;
     }
@@ -34,6 +40,7 @@ public class EditCampaignController implements Serializable {
     public String doCancel(){
         return Pages.LIST_CAMPAIGNS;
     }
+
 
 
 }

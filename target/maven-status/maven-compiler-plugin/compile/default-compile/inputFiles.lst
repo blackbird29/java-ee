@@ -10,6 +10,7 @@
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/services/MockCampaignServiceBean.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/services/CampaignServiceBean.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/util/Log.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/util/Events.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/model/Donation.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/data/CampaignProducer.java
