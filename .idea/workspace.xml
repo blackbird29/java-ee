@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d4cc6ef-6616-4e7d-9d59-82f7ac9fafdd" name="Default" comment="- exercise 6.6.2 implemented&#10;">
+    <list default="true" id="9d4cc6ef-6616-4e7d-9d59-82f7ac9fafdd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditCampaignController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditCampaignController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/EditDonationFormController.class" />
@@ -23,9 +23,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/services/CampaignServiceBean.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/services/CampaignServiceBean.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/util/Resources.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/util/Resources.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditCampaignController.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/controller/EditCampaignController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/util/Events.java" afterPath="$PROJECT_DIR$/src/main/java/de/dpunkt/myaktion/util/Events.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
@@ -968,7 +965,7 @@
       <workItem from="1449216195154" duration="1012000" />
       <workItem from="1449218176564" duration="2521000" />
       <workItem from="1449222347630" duration="5099000" />
-      <workItem from="1449774600386" duration="442000" />
+      <workItem from="1449774600386" duration="470000" />
     </task>
     <task id="LOCAL-00001" summary="pages 75 - 87&#10;&#10;created main page listCampaigns.xhtml,&#10;localized it,&#10;added URL relocation when calling .../my-aktion">
       <created>1447240906751</created>
@@ -1048,15 +1045,21 @@
       <option name="project" value="LOCAL" />
       <updated>1449227080788</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- exercise 6.6.2 implemented&#10;">
+      <created>1449775068934</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1449775068934</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43402000" />
+    <option name="totallyTimeSpent" value="43430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
