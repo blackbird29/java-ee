@@ -30,7 +30,10 @@ public class CampaignServiceBean implements CampaignService {
     public List<Campaign> getAllCampaigns(){
         TypedQuery<Campaign> query = entityManager.createNamedQuery(Campaign.findAll, Campaign.class);
         List<Campaign> campaigns = query.getResultList();
-        campaigns.forEach( campaign -> campaign.setAmountDonatedSoFar(getAmountDonatedSoFar(campaign)) );
+        campaigns.forEach( campaign -> {
+            campaign.setAmountDonatedSoFar(getAmountDonatedSoFar(campaign));
+            logger.log(Level.INFO, "Campaign "+ campaign.getName(),"Successful");
+        } );
         logger.log(Level.INFO, "All campaigns retrieved","Successful");
         return campaigns;
     }

@@ -40,17 +40,18 @@ public class CampaignListProducer{
     }
 
     public void onCampaignAdded(@Observes @Events.Added Campaign campaign){
-        getCampaigns().add(campaign);
+        campaignService.addCampaign(campaign);
         initializeCampaigns();
     }
 
     public void onCampaignDeleted(@Observes @Events.Deleted Campaign campaign){
-        getCampaigns().remove(campaign);
+        campaignService.deleteCampaign(campaign);
         initializeCampaigns();
     }
 
     public void onCampaignUpdated(@Observes @Events.Updated Campaign campaign) {
-        logger.log(Level.INFO, "Not implemented yet - Campaign update");
+        campaignService.updateCampaign(campaign);
+        initializeCampaigns();
     }
 
 }
