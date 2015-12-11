@@ -1,19 +1,40 @@
 package de.dpunkt.myaktion.model;
 
+import javax.persistence.*;
 import java.util.Currency;
 import java.util.List;
 
 /**
  * Created by blackbird on 10/18/15.
  */
+@NamedQueries({
+        @NamedQuery(
+                name = Campaign.findAll,
+                query = "SELECT c FROM Campaign c ORDER BY c.name"),
+        @NamedQuery(
+                name = Campaign.getAmountDonatedSoFar,
+                query = "SELECT SUM(d.amount) FROM Donation d WHERE d.campaign = :campaign")
+})
+
+@Entity
 public class Campaign {
+
+    @GeneratedValue
+    @Id
+    private Long id;
+
+    public static final String findAll = "Campaign.findAll";
+    public static final String getAmountDonatedSoFar = "Campaign.getAmountDonatedSoFar";
 
     private String name;
     private Double targetAmount;
     private Double donationMinimum;
+    @Transient
     private Double amountDonatedSoFar;
+    @AttributeOverrides({@AttributeOverride(name = "name", column = @Column(name = "accountName"))})
+    @Embedded
     private Account account;
-    private Long id;
+    @OneToMany(mappedBy = "campaign")
     private List<Donation> donations;
     private String currency = "EUR";
 

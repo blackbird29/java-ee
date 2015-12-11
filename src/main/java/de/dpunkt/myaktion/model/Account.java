@@ -1,8 +1,11 @@
 package de.dpunkt.myaktion.model;
 
+import javax.persistence.Embeddable;
+
 /**
  * Created by blackbird on 10/18/15.
  */
+@Embeddable
 public class Account {
 
     private String name;

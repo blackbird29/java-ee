@@ -1,6 +1,9 @@
 package de.dpunkt.myaktion.controller;
 
 import de.dpunkt.myaktion.model.Donation;
+import de.dpunkt.myaktion.model.Status;
+import de.dpunkt.myaktion.services.DonationService;
+import de.dpunkt.myaktion.services.DonationServiceBean;
 import de.dpunkt.myaktion.util.Log;
 
 import javax.annotation.PostConstruct;
@@ -32,6 +35,8 @@ public class DonateMoneyController implements Serializable {
     @Inject
     @Log.FachLog
     private Logger logger;
+    @Inject
+    private DonationService donationService;
 
     @PostConstruct
     public void initializeDonation(){
@@ -71,6 +76,8 @@ public class DonateMoneyController implements Serializable {
     }
 
     public String doDonation(){
+        getDonation().setStatus(Status.IN_PROCESS);
+        donationService.addDonation(getCampaignId(), getDonation());
         logger.log(Level.INFO, "log.donationMoney.thank_you",
                 new Object[]{getDonation().getDonorName(),
                 getDonation().getAccount()});

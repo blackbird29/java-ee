@@ -1,6 +1,8 @@
 de/dpunkt/myaktion/util/Log.class
+de/dpunkt/myaktion/services/DonationServiceBean.class
 de/dpunkt/myaktion/util/Events$Added.class
 de/dpunkt/myaktion/services/CampaignService.class
+de/dpunkt/myaktion/util/Events$Updated.class
 de/dpunkt/myaktion/controller/EditCampaignController.class
 de/dpunkt/myaktion/util/Log$FachLog.class
 de/dpunkt/myaktion/util/Resources.class
@@ -17,6 +19,7 @@ de/dpunkt/myaktion/controller/EditDonationFormController.class
 de/dpunkt/myaktion/util/Events$Deleted.class
 de/dpunkt/myaktion/util/Log$TecLog.class
 de/dpunkt/myaktion/model/Campaign.class
+de/dpunkt/myaktion/services/DonationService.class
 de/dpunkt/myaktion/services/CampaignServiceBean.class
 de/dpunkt/myaktion/controller/DonateMoneyController.class
 de/dpunkt/myaktion/services/MockCampaignServiceBean.class

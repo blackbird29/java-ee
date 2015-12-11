@@ -65,4 +65,19 @@ public class MockCampaignServiceBean implements CampaignService {
         return returnList;
     }
 
+    @Override
+    public void addCampaign(Campaign campaign) {
+
+    }
+
+    @Override
+    public void deleteCampaign(Campaign campaign) {
+
+    }
+
+    @Override
+    public void updateCampaign(Campaign campaign) {
+
+    }
+
 }
