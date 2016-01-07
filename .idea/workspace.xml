@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d4cc6ef-6616-4e7d-9d59-82f7ac9fafdd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/controller/DonateMoneyController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/services/DonationService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/services/DonationServiceBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/de/dpunkt/myaktion/util/Events$Updated.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/services/DonationService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/services/DonationServiceBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/de/dpunkt/myaktion/util/Events$Updated.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ValidationMessages_de.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ValidationMessages_en.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/META-INF/persistence.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/ValidationMessages_de.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/classes/ValidationMessages_en.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/my-aktion/WEB-INF/myaktion-ds.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/donateMoney.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/donateMoney.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/editCampaign.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/editCampaign.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/my-aktion/listDonations.xhtml" afterPath="$PROJECT_DIR$/target/my-aktion/listDonations.xhtml" />
     </list>
     <ignored path="my-aktion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1048,7 +1056,7 @@
       <workItem from="1449218176564" duration="2521000" />
       <workItem from="1449222347630" duration="5099000" />
       <workItem from="1449774600386" duration="17418000" />
-      <workItem from="1452159358764" duration="3597000" />
+      <workItem from="1452159358764" duration="3676000" />
     </task>
     <task id="LOCAL-00001" summary="pages 75 - 87&#10;&#10;created main page listCampaigns.xhtml,&#10;localized it,&#10;added URL relocation when calling .../my-aktion">
       <created>1447240906751</created>
@@ -1152,11 +1160,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452162887622</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- fixed DonationList call ( receiptsRequested was used instead of receiptRequested )&#10;- page 221 - 229">
+      <created>1452162986685</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1452162986685</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63975000" />
+    <option name="totallyTimeSpent" value="64054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1366" height="746" extended-state="0" />
