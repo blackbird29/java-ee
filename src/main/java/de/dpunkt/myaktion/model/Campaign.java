@@ -43,7 +43,7 @@ public class Campaign {
     @AttributeOverrides({@AttributeOverride(name = "name", column = @Column(name = "accountName"))})
     @Embedded
     private Account account;
-    @OneToMany(mappedBy = "campaign")
+    @OneToMany(mappedBy = "campaign", cascade = CascadeType.REMOVE)
     private List<Donation> donations;
     private String currency = "EUR";
 

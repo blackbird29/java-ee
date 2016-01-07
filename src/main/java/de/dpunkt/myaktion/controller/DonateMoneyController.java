@@ -77,6 +77,7 @@ public class DonateMoneyController implements Serializable {
 
     public String doDonation(){
         getDonation().setStatus(Status.IN_PROCESS);
+        System.out.println(getCampaignId());
         donationService.addDonation(getCampaignId(), getDonation());
         logger.log(Level.INFO, "log.donationMoney.thank_you",
                 new Object[]{getDonation().getDonorName(),

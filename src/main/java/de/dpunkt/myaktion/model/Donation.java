@@ -1,6 +1,9 @@
 package de.dpunkt.myaktion.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by blackbird on 10/18/15.
@@ -11,12 +14,18 @@ public class Donation {
     @GeneratedValue
     @Id
     private Long id;
-
+    @NotNull(message = "{donation.amount.notNull}")
+    @DecimalMin(value = "1.00", message = "{donation.amount.decimalMin}")
     private Double amount;
+    @NotNull
+    @Size(min = 5, max = 40, message = "{donation.donorName.size}")
     private String donorName;
-    private Boolean receiptsRequested;
+    @NotNull
+    private Boolean receiptRequested;
+    @NotNull
     private Status status;
     @Embedded
+    @NotNull
     private Account account;
     @ManyToOne
     private Campaign campaign;
@@ -50,11 +59,11 @@ public class Donation {
     }
 
     public Boolean getReceiptRequested() {
-        return receiptsRequested;
+        return receiptRequested;
     }
 
     public void setReceiptRequested(Boolean receiptsRequested) {
-        this.receiptsRequested = receiptsRequested;
+        this.receiptRequested = receiptsRequested;
     }
 
     public Status getStatus() {
