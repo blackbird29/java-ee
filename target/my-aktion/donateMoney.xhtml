@@ -40,7 +40,6 @@
                 <f:passThroughAttribute name="placeholder"
                                         value="#{msg['donateMoney.name_of_donor']}">
                 </f:passThroughAttribute>
-                <f:validateRequired/>
             </p:inputText>
             <p:message for="name" class="validation-error"/>
 
@@ -50,7 +49,6 @@
                 <f:passThroughAttribute name="placeholder"
                                         value="#{msg['donateMoney.iban_of_donor']}">
                 </f:passThroughAttribute>
-                <f:validateRequired/>
             </p:inputText>
             <p:message for="iban" class="validation-error"/>
 
@@ -60,7 +58,6 @@
                 <f:passThroughAttribute name="placeholder"
                                         value="#{msg['donateMoney.name_of_bank']}">
                 </f:passThroughAttribute>
-                <f:validateRequired/>
             </p:inputText>
             <p:message for="name_bank" class="validation-error"/>
 
@@ -71,7 +68,6 @@
                     <f:passThroughAttribute name="placeholder"
                                             value="#{msg['donateMoney.amount_to_be_donated']}">
                     </f:passThroughAttribute>
-                    <f:validateRequired/>
                     <f:convertNumber maxFractionDigits="2" minFractionDigits="2"/>
                 </p:inputText> EUR
             </h:panelGroup>
