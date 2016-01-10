@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<body>
+    <f:view contracts="#{view.locale.language}">
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h1>#{addMode ?
+                msg['editCampaign.add_new_campaign'] :
+                msg['editCampaign.edit_campaign']}</h1>
+                <h:form>
+                    <p:messages closable="true"></p:messages>
+                    <p:tabView id="tabView">
+                    <p:tab title="#{msg['editCampaign.general']}">
+                    <h:panelGrid columns="3">
+                        <f:facet name="header">
+                            #{msg['editCampaign.general']}
+                        </f:facet>
+                        <h:outputLabel value="#{msg['editCampaign.name']}:">
+                        </h:outputLabel>
+                        <p:inputText id="a_name"
+                                     value="#{selectedCampaign.name}">
+                            <f:passThroughAttribute name="placeholder"
+                                                    value="#{msg['editCampaign.name_of_the_campaign']}">
+                            </f:passThroughAttribute>
+                        </p:inputText>
+                        <p:message for="a_name" class="validation-error"></p:message>
+                        <h:outputLabel value="#{msg['editCampaign.target_amount']}:">
+                        </h:outputLabel>
+                        <h:panelGroup>
+                            <p:inputText id="a_targetAmount"
+                                         value="#{selectedCampaign.targetAmount}">
+                                <f:passThroughAttribute name="placeholder"
+                                                        value="#{msg['editCampaign.amount_aimed_for']}">
+                                </f:passThroughAttribute>
+                                <f:convertNumber maxFractionDigits="2"
+                                                 minFractionDigits="2">
+                                </f:convertNumber>
+                            </p:inputText> #{selectedCampaign.currency}
+                        </h:panelGroup>
+                        <p:message for="a_targetAmount" class="validation-error"></p:message>
+                        <h:outputLabel value="#{msg['editCampaign.donation_amount']}:">
+                        </h:outputLabel>
+                        <h:panelGroup>
+                            <p:inputText id="a_donationMinimum"
+                                         value="#{selectedCampaign.donationMinimum}">
+                                <f:passThroughAttribute name="placeholder"
+                                                        value="#{msg['editCampaign.amount_to_be_donated']}">
+                                </f:passThroughAttribute>
+                                <f:convertNumber maxFractionDigits="2"
+                                                 minFractionDigits="2"></f:convertNumber>
+                            </p:inputText> #{selectedCampaign.currency}
+                        </h:panelGroup>
+                        <p:message for="a_donationMinimum" class="validation-error"></p:message>
+                    </h:panelGrid>
+                    </p:tab>
+                    <p:tab title="#{msg['editCampaign.bank_account']}">
+                    <h:panelGrid columns="3">
+                        <f:facet name="header">
+                            #{msg['editCampaign.bank_account']}
+                        </f:facet>
+                        <h:outputLabel value="#{msg['editCampaign.name']}:">
+                        </h:outputLabel>
+                        <p:inputText id="b_name"
+                                     value="#{selectedCampaign.account.name}">
+                            <f:passThroughAttribute name="placeholder"
+                                                    value="#{msg['editCampaign.name_of_the_account']}">
+                            </f:passThroughAttribute>
+                        </p:inputText>
+                        <p:message for="b_name" class="validation-error"></p:message>
+                        <h:outputLabel value="#{msg['editCampaign.iban']}:">
+                        </h:outputLabel>
+                        <p:inputText id="b_iban"
+                            value="#{selectedCampaign.account.iban}">
+                            <f:passThroughAttribute name="placeholder"
+                                                    value="#{msg['editCampaign.iban_of_the_account']}">
+                            </f:passThroughAttribute>
+                        </p:inputText>
+                        <p:message for="b_iban" class="validation-error"></p:message>
+                        <h:outputLabel value="#{msg['editCampaign.name_of_bank']}:">
+                        </h:outputLabel>
+                        <p:inputText id="b_name_of_bank"
+                                     value="#{selectedCampaign.account.nameOfBank}">
+                            <f:passThroughAttribute name="placeholder"
+                                                    value="#{msg['editCampaign.name_of_bank']}">
+                            </f:passThroughAttribute>
+                        </p:inputText>
+                        <p:message for="b_name_of_bank" class="validation-error"></p:message>
+                    </h:panelGrid>
+                    </p:tab>
+                    </p:tabView>
+                    <p:commandButton value="#{msg['editCampaign.save']}" ajax="false"
+                                     action="#{editCampaignController.doSave}"></p:commandButton>
+                    <p:commandButton value="#{msg['editCampaign.cancel']}" ajax="false"
+                                     immediate="true" action="#{editCampaignController.doCancel}"></p:commandButton>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </f:view>
+</body>
+</html>

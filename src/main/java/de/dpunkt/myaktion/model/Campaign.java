@@ -4,13 +4,16 @@ import javax.persistence.*;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.Currency;
 import java.util.List;
 
 /**
  * Created by blackbird on 10/18/15.
  */
 @NamedQueries({
+        @NamedQuery(
+                name = Campaign.findByOrganizer,
+                query = "SELECT c FROM Campaign c WHERE c.organizer = :organizer ORDER BY c.name"
+        ),
         @NamedQuery(
                 name = Campaign.findAll,
                 query = "SELECT c FROM Campaign c ORDER BY c.name"),
@@ -26,6 +29,7 @@ public class Campaign {
     @Id
     private Long id;
 
+    public static final String findByOrganizer = "Campaign.findByOrganizer";
     public static final String findAll = "Campaign.findAll";
     public static final String getAmountDonatedSoFar = "Campaign.getAmountDonatedSoFar";
 
@@ -46,6 +50,8 @@ public class Campaign {
     @OneToMany(mappedBy = "campaign", cascade = CascadeType.REMOVE)
     private List<Donation> donations;
     private String currency = "EUR";
+    @ManyToOne
+    private Organizer organizer;
 
     public Campaign() {
         this.account = new Account();
@@ -109,5 +115,13 @@ public class Campaign {
 
     public String getCurrency(){
         return currency;
+    }
+
+    public Organizer getOrganizer() {
+        return organizer;
+    }
+
+    public void setOrganizer(Organizer organizer) {
+        this.organizer = organizer;
     }
 }

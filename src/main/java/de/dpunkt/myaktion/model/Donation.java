@@ -8,8 +8,12 @@ import javax.validation.constraints.Size;
 /**
  * Created by blackbird on 10/18/15.
  */
+@NamedQueries({
+        @NamedQuery(name = Donation.findByStatus, query = "SELECT d FROM Donation d WHERE d.status = :status")
+})
 @Entity
 public class Donation {
+    public static final String findByStatus = "Donation.findByStatus";
 
     @GeneratedValue
     @Id

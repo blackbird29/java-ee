@@ -77,11 +77,10 @@ public class DonateMoneyController implements Serializable {
 
     public String doDonation(){
         getDonation().setStatus(Status.IN_PROCESS);
-        System.out.println(getCampaignId());
         donationService.addDonation(getCampaignId(), getDonation());
         logger.log(Level.INFO, "log.donationMoney.thank_you",
                 new Object[]{getDonation().getDonorName(),
-                getDonation().getAccount()});
+                getDonation().getAmount()});
         final ResourceBundle resourceBundle = facesContext.getApplication().getResourceBundle(facesContext,"msg");
         final String msg = resourceBundle.getString("donateMoney.thank_you");
         facesContext.addMessage(null,new FacesMessage(
