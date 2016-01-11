@@ -9,12 +9,16 @@ import java.util.List;
  */
 public interface CampaignService {
 
+    Campaign getCampaign(Long campaignId);
+
     List<Campaign> getAllCampaigns();
 
-    void addCampaign(Campaign campaign);
+    Campaign addCampaign(Campaign campaign);
 
     void deleteCampaign(Campaign campaign);
 
-    void updateCampaign(Campaign campaign);
+    void deleteCampaign(Long campaignId);
+
+    Campaign updateCampaign(Campaign campaign);
 
 }

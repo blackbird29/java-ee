@@ -7,6 +7,7 @@ de/dpunkt/myaktion/controller/EditCampaignController.class
 de/dpunkt/myaktion/util/Log$FachLog.class
 de/dpunkt/myaktion/util/Resources.class
 de/dpunkt/myaktion/util/Events.class
+de/dpunkt/myaktion/resources/DonationResource.class
 de/dpunkt/myaktion/controller/ListCampaignsController.class
 de/dpunkt/myaktion/data/CampaignProducer.class
 de/dpunkt/myaktion/model/Donation.class
@@ -21,9 +22,11 @@ de/dpunkt/myaktion/controller/EditDonationFormController.class
 de/dpunkt/myaktion/util/Events$Deleted.class
 de/dpunkt/myaktion/util/Log$TecLog.class
 de/dpunkt/myaktion/model/Campaign.class
+de/dpunkt/myaktion/resources/CampaignResource.class
 de/dpunkt/myaktion/services/DonationService.class
 de/dpunkt/myaktion/services/CampaignServiceBean.class
 de/dpunkt/myaktion/controller/DonateMoneyController.class
 de/dpunkt/myaktion/scheduler/SchedulerBean.class
 de/dpunkt/myaktion/services/MockCampaignServiceBean.class
 de/dpunkt/myaktion/data/CampaignListProducer.class
+de/dpunkt/myaktion/services/exceptions/ObjectNotFoundException.class

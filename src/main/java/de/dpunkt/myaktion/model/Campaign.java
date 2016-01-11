@@ -4,6 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 /**
@@ -21,7 +22,7 @@ import java.util.List;
                 name = Campaign.getAmountDonatedSoFar,
                 query = "SELECT SUM(d.amount) FROM Donation d WHERE d.campaign = :campaign")
 })
-
+@XmlRootElement
 @Entity
 public class Campaign {
 

@@ -17,6 +17,11 @@ import java.util.List;
 @Alternative
 public class MockCampaignServiceBean implements CampaignService {
 
+    @Override
+    public Campaign getCampaign(Long campaignId) {
+        return null;
+    }
+
     public List<Campaign> getAllCampaigns(){
         Donation donation1 = new Donation();
         donation1.setDonorName("Heinz Schmidt");
@@ -66,8 +71,8 @@ public class MockCampaignServiceBean implements CampaignService {
     }
 
     @Override
-    public void addCampaign(Campaign campaign) {
-
+    public Campaign addCampaign(Campaign campaign) {
+        return null;
     }
 
     @Override
@@ -76,8 +81,13 @@ public class MockCampaignServiceBean implements CampaignService {
     }
 
     @Override
-    public void updateCampaign(Campaign campaign) {
+    public void deleteCampaign(Long campaignId) {
 
+    }
+
+    @Override
+    public Campaign updateCampaign(Campaign campaign) {
+        return null;
     }
 
 }

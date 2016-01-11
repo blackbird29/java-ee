@@ -14,6 +14,8 @@
         <web-resource-collection>
             <web-resource-name>organizer</web-resource-name>
             <url-pattern>/organizer/*</url-pattern>
+            <web-resource-name>organizer access via REST</web-resource-name>
+            <url-pattern>/rest/organizer/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>Organizer</role-name>
@@ -25,4 +27,8 @@
     <security-role>
         <role-name>Organizer</role-name>
     </security-role>
+    <servlet-mapping>
+        <servlet-name>javax.ws.rs.core.Application</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
 </web-app>

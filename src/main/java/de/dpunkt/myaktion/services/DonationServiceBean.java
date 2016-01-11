@@ -3,6 +3,7 @@ package de.dpunkt.myaktion.services;
 import de.dpunkt.myaktion.model.Campaign;
 import de.dpunkt.myaktion.model.Donation;
 import de.dpunkt.myaktion.model.Status;
+import de.dpunkt.myaktion.services.exceptions.ObjectNotFoundException;
 import de.dpunkt.myaktion.util.Log;
 
 import javax.annotation.security.PermitAll;
@@ -12,8 +13,10 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import java.util.List;
+import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 /**
  * Created by blackbird on 12/11/15.
@@ -35,6 +38,27 @@ public class DonationServiceBean implements DonationService {
         List<Donation> donations = managedCampaign.getDonations();
         donations.size();
         return donations;
+    }
+
+    @Override
+    @PermitAll
+    public List<Donation> getDonationListPublic(Long campaignId) throws ObjectNotFoundException {
+        Campaign managedCampaign = entityManager.find(Campaign.class, campaignId);
+        if(managedCampaign == null){
+            throw new ObjectNotFoundException();
+        }
+        List<Donation> donations = managedCampaign.getDonations();
+        final Function<Donation,Donation> donationFilter =
+                donation -> {
+                    Donation filtered = new Donation();
+                    filtered.setAmount(donation.getAmount());
+                    filtered.setDonorName(donation.getDonorName());
+                    return filtered;
+                };
+        return donations
+                .stream()
+                .map(donationFilter)
+                .collect(Collectors.toList());
     }
 
     @PermitAll

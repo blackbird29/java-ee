@@ -43,6 +43,12 @@ public class CampaignServiceBean implements CampaignService {
     private SessionContext sessionContext;
 
     @Override
+    public Campaign getCampaign(Long campaignId){
+        Campaign managedCampaign = entityManager.find(Campaign.class, campaignId);
+        return managedCampaign;
+    }
+
+    @Override
     public List<Campaign> getAllCampaigns(){
         TypedQuery<Campaign> query = entityManager.createNamedQuery(Campaign.findByOrganizer, Campaign.class);
         query.setParameter("organizer", getLoggedInOrganizer());
@@ -56,11 +62,11 @@ public class CampaignServiceBean implements CampaignService {
     }
 
     @Override
-    public void addCampaign(Campaign campaign) {
+    public Campaign addCampaign(Campaign campaign) {
             Organizer organizer = getLoggedInOrganizer();
             campaign.setOrganizer(organizer);
             entityManager.persist(campaign);
-
+            return campaign;
     }
 
     @Override
@@ -70,8 +76,14 @@ public class CampaignServiceBean implements CampaignService {
     }
 
     @Override
-    public void updateCampaign(Campaign campaign) {
-        entityManager.merge(campaign);
+    public void deleteCampaign(Long campaignId){
+        Campaign managedCampaign = getCampaign(campaignId);
+        entityManager.remove(managedCampaign);
+    }
+
+    @Override
+    public Campaign updateCampaign(Campaign campaign) {
+        return entityManager.merge(campaign);
     }
 
     private Double getAmountDonatedSoFar(Campaign campaign){
