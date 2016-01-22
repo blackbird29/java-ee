@@ -1,0 +1,8 @@
+{"name":"Rollstuhl für Maria",
+"targetAmount":2500.0,
+"donationMinimum":25.0,
+"account":
+  {"name":"Max Mustermann",
+  "nameOfBank":"ABC Bank",
+  "iban":"DE4912345678901234"}
+}

@@ -2,6 +2,8 @@
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/Pages.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/services/exceptions/ObjectNotFoundException.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/services/DonationService.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/monitor/ws/ObjectFactory.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/monitor/ws/package-info.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/resources/CampaignResource.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/util/Log.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/util/Events.java
@@ -13,13 +15,17 @@
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/model/Campaign.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/ListDonationsController.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/DonateMoneyController.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/monitor/ws/DonationDelegatorService.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/services/CampaignService.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/EditDonationFormController.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/model/Status.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/util/TransactionInterceptor.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/monitor/ws/DonationDelegator.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/services/MockCampaignServiceBean.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/monitor/ws/SendDonation.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/data/CampaignListProducer.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/scheduler/SchedulerBean.java
+/home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/monitor/ws/SendDonationResponse.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/services/CampaignServiceBean.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/model/Organizer.java
 /home/blackbird/Java-EE/Java-EE-Workspace/my-aktion/src/main/java/de/dpunkt/myaktion/controller/ListCampaignsController.java
